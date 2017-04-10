@@ -4,7 +4,6 @@
 void ofApp::setup(){
     cout << "Hello openFrameworks!" << endl;
     
-    ofBackground(54, 54, 54, 255);
     myFont.load("verdana.ttf", 32);
 }
 
