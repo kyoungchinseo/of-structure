@@ -3,6 +3,9 @@
 //--------------------------------------------------------------
 void ofApp::setup(){
     cout << "Hello openFrameworks!" << endl;
+    
+    ofBackground(54, 54, 54, 255);
+    myFont.load("verdana.ttf", 32);
 }
 
 //--------------------------------------------------------------
@@ -12,6 +15,8 @@ void ofApp::update(){
 
 //--------------------------------------------------------------
 void ofApp::draw(){
+    ofSetColor(245, 58, 135);
+    myFont.drawString("Hello openFrameworks!",200,400);
 
 }
 
