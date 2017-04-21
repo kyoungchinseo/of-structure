@@ -10,14 +10,18 @@ void ofApp::setup(){
 
 //--------------------------------------------------------------
 void ofApp::update(){
-
+    rot = rot + 5;
 }
 
 //--------------------------------------------------------------
 void ofApp::draw(){
     ofSetColor(245, 58, 135);
-    myFont.drawString("Hello openFrameworks!",200,400);
-
+    
+    ofPushMatrix();
+    ofTranslate(200, 400);
+    ofRotate(rot);
+    myFont.drawString("Hello openFrameworks!",0,0);
+    ofPopMatrix();
 }
 
 //--------------------------------------------------------------
